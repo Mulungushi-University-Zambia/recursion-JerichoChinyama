@@ -1,0 +1,32 @@
+PSEUDOCODE - FIBONACCI
+ALGORITHM  Fibonacci(n)
+// Prints first n+1 terms of the Fibonacci sequence
+// F(0)=0, F(1), F(k)=F(k-1)+F(k-2)
+
+BEGIN
+
+     INPUT  n
+
+      IF  n  <  0  THEN
+
+        OUTPUT  "Error: n must be non-negative"
+        
+         STOP
+
+       END IF
+
+     a  =  0
+     b  =  1
+     i  =  1
+
+     OUTPUT  a  
+     
+    WHILE  i  <= n  DO
+      temp  =  a  +  b
+      a  =  b
+      b  =  temp
+      OUTPUT  a 
+      i  =  i + 1
+   END WHILE
+
+END

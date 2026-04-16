@@ -1,0 +1,25 @@
+PSEUDOCODE - FACTORIAL
+// Compute n! = 1 * 2 * 3 * ... * n
+
+BEGIN
+
+     INPUT n
+
+      IF n < 0 THEN
+
+       OUTPUT "Error: negative input"
+
+      STOP
+
+   END IF
+   result = 1
+   i = 1
+
+  WHEN i <= n DO
+     result = result * i
+     i = i + 1
+  END WHILE
+
+ OUTPUT result
+
+END
